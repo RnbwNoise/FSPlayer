@@ -22,18 +22,18 @@
      * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
      * THE SOFTWARE.
     -->
-	<head>
-		<title>FSPlayer Sample Page</title>
-		<style>
-			body {
-				background-color: black;
-				margin: 0px;
+    <head>
+        <title>FSPlayer Sample Page</title>
+        <style>
+            body {
+                background-color: black;
+                margin: 0px;
                 padding: 0px;
-				overflow: hidden;
+                overflow: hidden;
             }
-		</style>
-	</head>
-	<body>
+        </style>
+    </head>
+    <body>
         <script id="shader" type="x-shader/x-fragment">
             precision mediump float;
             
@@ -103,7 +103,7 @@
         
         <script src="fsplayer.js" type="text/javascript"></script>
         
-		<script type="text/javascript">
+        <script type="text/javascript">
             var container = document.getElementById('effect');
             
             var player = new FSPlayer(container, 600, 600, document.getElementById('shader').textContent);
@@ -118,5 +118,5 @@
             
             player.play();
         </script>
-	</body>
+    </body>
 </html>
