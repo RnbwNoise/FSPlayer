@@ -1,6 +1,6 @@
 /**
  * FragmentShader Player
- * Copyright (C) 2014 Vladimir P.
+ * Copyright (C) 2014-2015 Vladimir P.
  * 
  * Portions Copyright (C) 2011 Mr.doob. Released under the MIT license.
  * https://github.com/mrdoob/glsl-sandbox/tree/eacba0261300fb67f664f5b16b3bb1edba9ebd76
@@ -102,7 +102,7 @@ FSPlayer.prototype.updateProgram = function(fsCode) {
     gl.linkProgram(this._program);
     if(!gl.getProgramParameter(this._program, gl.LINK_STATUS)) {
         throw new Error('Cannot link the program (' + gl.getError() + ': ' +
-                        gl.getProgramParameter(program, gl.VALIDATE_STATUS) + ')');
+                        gl.getProgramParameter(this._program, gl.VALIDATE_STATUS) + ')');
     }
     
     gl.useProgram(this._program);
